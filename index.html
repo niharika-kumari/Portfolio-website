@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Niharika - Frontend developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://kit.fontawesome.com/c348d4c177.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+
+         
+        
+        .container {
+            max-width: 1152px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1152px;
+            }
+        }
+
+
+
+        .firstpage {
+            background-color: rgb(1, 1, 21);
+            color: white;
+            font-family: ;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 93%, 0 100%);
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(26, 26, 53);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            font-size: 1.06rem;
+            color: rgb(171, 139, 202);
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+
+        }
+
+        .rightsection img {
+
+            width: 100%;
+        }
+
+        .purple {
+            color: rgb(166, 133, 197);
+        }
+
+        #element {
+            color: rgb(166, 133, 197);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .leftsection .btn {
+            background-color: rgb(36, 36, 94);
+            color: blanchedalmond;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 5px 5px 5px 5px;
+        }
+
+        .leftsection .buttons {
+            padding: 50px 0;
+        }
+
+        .buttons .btn :hover {
+            background-color: bisque;
+            color: black;
+        }
+
+        .blank {
+            height: 100px;
+            width: 100%;
+        }
+
+        .twopage {
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+        }
+
+        .about h1 {
+            color: black;
+            font-family: 'poppins' sans-serif;
+            font-size: xx-large;
+            padding-left: 20px;
+            padding-right: 40px;
+            padding-top: 50px;
+        }
+
+        .about .me {
+            color: blueviolet;
+        }
+
+        .about h3 {
+            padding-top: 10px;
+            font-style: oblique;
+            padding-left: 20px;
+            padding-right: 40px
+        }
+
+        .para {
+
+            width: 500px;
+            font-style: oblique;
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-right: 150px;
+        }
+
+        .pic {
+            padding-left: 150px;
+            padding-top: 50px;
+            border-radius: 50%;
+            height: 100px;
+            width: 50px;
+            padding-bottom: 150px;
+        }
+
+        .para2 {
+            padding-top: 10px;
+            padding-bottom: 90px;
+
+        }
+
+        .symbols {
+            display: flex;
+            justify-content: space-around;
+            margin-right: 3px;
+            padding-left: 720px;
+            padding-right: 250px;
+            width: 200px;
+            font-size: xx-large;
+            cursor: pointer;
+            padding-bottom: 150px;
+
+
+        }
+
+        .thirdpage {
+            padding-top: 50px;
+            height: 700px;
+            width: 100%;
+            background-color: rgb(75, 75, 75)
+        }
+
+        .thirdpage h1 {
+            padding-top: 30px;
+            padding-bottom: 60px;
+            font-size: x-large;
+            color: rgb(112, 40, 10);
+            text-align: center;
+        }
+
+        .thirdpage h1 {
+            font-size: xx-large;
+            padding-bottom: 10px;
+            color: aliceblue;
+            padding-left: 50px;
+            font-family: inherit;
+        }
+
+        .line1 {
+            height: 50px;
+            width: 1px;
+            color: beige;
+        }
+
+
+        .box1 h1 {
+            font-size: larger;
+            color: rgb(108, 38, 8);
+            font-weight: bolder;
+            padding-right: 30px;
+        }
+
+        .box1 i {
+            color: rgb(147, 51, 10);
+            font-size: xx-large;
+            padding-left: 45%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .box1 h2 {
+            font-size: medium;
+            padding-left: 15%;
+            padding-bottom: 20px;
+        }
+
+        .box1 h2 span {
+            color: rgb(141, 75, 9);
+            font-size: large;
+        }
+
+        .box1 .link1 {
+            text-align: center;
+            color: black;
+            cursor: pointer;
+
+        }
+
+        .box1 {
+            height: 350px;
+            width: 230px;
+            background-color: rgb(139, 134, 134);
+            margin-top: 100px;
+
+            box-shadow: 5px 5px 5px 5px rgb(36, 36, 36);
+        }
+
+
+
+
+        .box2 h1 {
+            font-size: larger;
+            color: rgb(108, 38, 8);
+            font-weight: bolder;
+            padding-right: 30px;
+        }
+
+        .box2 i {
+            color: rgb(147, 51, 10);
+            font-size: xx-large;
+            padding-left: 45%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .box2 h2 {
+            font-size: medium;
+            padding-left: 15%;
+            padding-bottom: 20px;
+        }
+
+        .box2 h2 span {
+            color: rgb(141, 75, 9);
+            font-size: large;
+        }
+
+        .box2 a {
+            text-align: center;
+            color: black;
+            cursor: pointer;
+
+        }
+
+        .box2 {
+            height: 350px;
+            width: 230px;
+            background-color: rgb(139, 134, 134);
+            margin-top: 100px;
+
+            box-shadow: 5px 5px 5px 5px rgb(36, 36, 36);
+        }
+
+
+
+        .box3 h1 {
+            font-size: larger;
+            color: rgb(108, 38, 8);
+            font-weight: bolder;
+            padding-right: 30px;
+        }
+
+        .box3 i {
+            color: rgb(147, 51, 10);
+            font-size: xx-large;
+            padding-left: 45%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .box3 h2 {
+            font-size: medium;
+            padding-left: 15%;
+            padding-bottom: 20px;
+        }
+
+        .box3 h2 span {
+            color: rgb(141, 75, 9);
+            font-size: large;
+        }
+
+        .box3 a {
+            text-align: center;
+            color: black;
+            cursor: pointer;
+
+        }
+
+        .box3 {
+            height: 350px;
+            width: 230px;
+            background-color: rgb(139, 134, 134);
+            margin-top: 100px;
+
+            box-shadow: 5px 5px 5px 5px rgb(36, 36, 36);
+
+            margin-right: 20px;
+        }
+
+
+        .boxes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-left: 20px;
+
+        }
+
+        
+        @media (max-width:576px){
+    .hero{
+        flex-direction: column;
+    }
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95%, 0 100%);
+    }
+    </style>
+</head>
+
+<body>
+    <section class="firstpage">
+        <header>
+            <nav>
+                <div class="left"> Nihiarika's Portfolio</div>
+                <div class="right">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="/">Services</a></li>
+                        <li><a href="/">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="firstsection">
+                <div class="leftsection"> Hi, I am <span class="purple">Niharika</span>
+                    <div> and I am a passionate</div>
+                    <span id="element"></span>
+                    <div class="button">
+                        <a href="resume.pdf"> <button class="btn">Download Resume</button></a>
+                        <a href="https://github.com/niharika-kumari
+.                         "><button class="btn">Github</button>
+                    </div></a>
+
+                </div>
+                <div class="rightsection">
+                    <img src="dev.png" alt="">
+                </div>
+
+            </section>
+            <div class="blank"></div>
+
+        </main>
+    </section>
+
+    <section class="secondpage">
+        <div class="twopage">
+            <div class="pic">
+                <img src="Untitled.png" alt="">
+            </div>
+            <div class="about">
+                <h1>About <span class="me">Me</span></h1>
+                <h3>Hello, I am Niharika Kumari</h3>
+                <div class="para"> I'm a Frontend Developer and Java learner, problem solver and fast learner with
+                    strong communication skills. I am motivated to upgrade and expand my skill set through mentorship
+                    and
+                    challenging projects. I enjoy working collaboratively but can also run with projects independently.
+                    I am excited about the prospect of joining a
+                    company.
+                    <div class="para2"> A highly motivated and skilled engineering graduate looking for an entry-level
+                        position as a software engineer. Solid knowledge in writing well-designed and testable code.
+                        Possess excellent knowledge in HTML, CSS, Javascript, Java, Data Structures and Algorithms.
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="symbols">
+            <a
+                href="https://www.linkedin.com/in/niharika-singh-12396a198?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://wa.me/qr/VARZP3CN4MX4D1"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="ns8285094509@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://github.com/niharika-kumari"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </section>
+
+
+    <section class="thirdpage">
+        <h1>My Projects</h1>
+        <div class="boxes">
+
+            <div class="box1"><i class="fa-solid fa-puzzle-piece"></i>
+                <h1>Tic Tac Toe game</h1>
+                <h2>Key Exepertise : <span class="key1">Java</span></h2>
+                   <div class="link1"> <a href=" https://github.com/niharika-kumari/Tic-Tac-Toe-game"></a></div>
+                </div>
+            
+
+            <div class="box2"><i class="fa-solid fa-code"></i>
+                <h1>Winny Cakes Website</h1>
+                <h2>Key Exepertise : <span class="key2">HTML, CSS</span></h2>
+                
+                    <a href="https://github.com/niharika-kumari/winni-cakes-frontend"></a>
+                </div>
+            
+
+            <div class="box3"><i class="fa-brands fa-amazon"></i>
+                <h1>Amazon Clone</h1>
+                <h2>Key Exepertise : <span class="key3">HTML, CSS</span></h2>
+
+                <a href="https://github.com/niharika-kumari/amazon-clone "></a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Frontend Developer', 'Analyst'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
